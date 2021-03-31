@@ -1,7 +1,31 @@
-PUT http://localhost:8000/login
+POST http://localhost:8000/login
 Content-Type: application/json
 
 {
-  "username": "user1",
+  "username": "island",
   "password": "1234"
+}
+
+###
+GET http://localhost:8000/users?id=71km9hl5ul8
+Authorization: a0359hgbak6
+
+###
+DELETE http://localhost:8000/users?id=71km9hl5ul8
+Authorization: zk45dquo8qd
+
+###
+GET http://localhost:8000/users?name=island
+Authorization: zk45dquo8qd
+
+###
+PUT http://localhost:8000/users 
+Authorization: a0359hgbak6
+Content-Type: application/json
+
+{
+  "age": 26,
+  "email": "huynh@email.com",
+  "name": "Huynh",
+  "workingPosition": 3
 }

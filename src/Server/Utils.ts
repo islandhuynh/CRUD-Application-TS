@@ -1,3 +1,4 @@
+import { UrlWithParsedQuery } from 'node:url';
 import { parse } from 'url';
 
 export class Utils {
@@ -7,7 +8,15 @@ export class Utils {
       const parsedUrl = parse(url);
       return parsedUrl.pathname!.split('/')[1];
     } else {
-      return 'a';
+      return '';
+    }
+  }
+
+  public static getUrlParameters(url: string | undefined): UrlWithParsedQuery | undefined {
+    if (url) {
+      return parse(url, true);
+    } else {
+      return undefined;
     }
   }
 }
