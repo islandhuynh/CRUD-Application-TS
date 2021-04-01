@@ -16,16 +16,16 @@ Authorization: zk45dquo8qd
 
 ###
 GET http://localhost:8000/users?name=island
-Authorization: zk45dquo8qd
+Authorization: s2ssz71ral
 
 ###
 PUT http://localhost:8000/users 
-Authorization: a0359hgbak6
+Authorization: oixqqb83aci
 Content-Type: application/json
 
 {
   "age": 26,
   "email": "huynh@email.com",
-  "name": "Huynh",
+  "name": "island",
   "workingPosition": 3
 }
