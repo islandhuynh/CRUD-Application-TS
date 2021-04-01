@@ -1,5 +1,3 @@
-
-
 export class Monitor {
 
   public static printInstances(): string {
