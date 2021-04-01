@@ -16,11 +16,11 @@ Authorization: zk45dquo8qd
 
 ###
 GET http://localhost:8000/users?name=island
-Authorization: s2ssz71ral
+Authorization: 98syucwugpv
 
 ###
 PUT http://localhost:8000/users 
-Authorization: oixqqb83aci
+Authorization: 98syucwugpv
 Content-Type: application/json
 
 {
@@ -29,3 +29,6 @@ Content-Type: application/json
   "name": "island",
   "workingPosition": 3
 }
+
+###
+GET http://localhost:8000/systemInfo
